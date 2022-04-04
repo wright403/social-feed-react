@@ -9,14 +9,17 @@ function App() {
   
   const [posts, setPosts] = useState([{Name: 'fred', Post: 'Hello world'}])
 
-
+function createPost(post){
+  let tempPosts = [...posts, post];
+  setPosts(tempPosts)
+}
   
   
   return (
     <div>
      
      <DisplayPosts posts={posts} />
-     <CreatePost />
+     <CreatePost newPostProperty={createPost}/>
      
     </div>
   );
