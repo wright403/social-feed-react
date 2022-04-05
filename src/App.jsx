@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import CreatePost from "./Components/CreatePost.jsx";
 import DisplayPosts from "./Components/DisplayPosts.jsx";
+import Posts from "./Components/Posts.jsx";
 
 function App() {
   const [posts, setPosts] = useState([
-    { name: "Fred", post: "A Test comment " },
+    { name: "Fred", post: "A Test comment ", like: false, dislike: false },
     { name: "Cash", post: "A new comment" },
   ]);
 
@@ -22,6 +23,7 @@ function App() {
     <div>
       <CreatePost newPostProperty={createPost} />
       <DisplayPosts posts={posts} />
+      <Posts />
     </div>
   );
 }
