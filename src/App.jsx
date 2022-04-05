@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CreatePost from "./Components/CreatePost.jsx";
 import DisplayPosts from "./Components/DisplayPosts.jsx";
+import NavBar from "./Components/NavBar.jsx";
 import Posts from "./Components/Posts.jsx";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div>
+      <NavBar />
       <CreatePost newPostProperty={createPost} />
       <DisplayPosts posts={posts} />
       <Posts />
