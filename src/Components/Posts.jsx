@@ -32,8 +32,8 @@ const Posts = (props) => {
     return(
         <div className= 'App'>
         <div></div>
-        <button onClick={likeComment}>like {likeActive}</button>
-        <button onClick={dislikeComment}>dislike {dislikeActive}</button>
+        <button onClick={likeComment} className='btn btn-primary'>like {likeActive}</button>
+        <button onClick={dislikeComment} className='btn btn-danger'>dislike {dislikeActive}</button>
         </div>
     )
 }

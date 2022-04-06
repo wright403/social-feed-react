@@ -3,6 +3,7 @@ import CreatePost from "./Components/CreatePost.jsx";
 import DisplayPosts from "./Components/DisplayPosts.jsx";
 import NavBar from "./Components/NavBar.jsx";
 import Posts from "./Components/Posts.jsx";
+import './App.css'
 
 function App() {
   const [posts, setPosts] = useState([
